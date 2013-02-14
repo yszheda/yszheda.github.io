@@ -1,1 +1,3 @@
 baseurl: /
+auto: true
+pygments: true
