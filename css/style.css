@@ -6,8 +6,16 @@ body{
 	color:#8f8f8f;
 }
 
-.intro { font-size:100%;
-	      line-height:105%;
+.intro {
+//	font-family: "Computer Modern";
+//	src: url('../fonts/cmunss.otf');
+
+//	position:relative; 
+	position:absolute; 
+	top:0px; 
+	left:150px;
+	font-size:100%;
+	line-height:105%;
 }
 
 .right {
@@ -140,6 +148,14 @@ h2{
 	font-size:40px;
 	line-height:80px;
 }
+
+.languages {
+		position:relative; 
+		top:0px; 
+		left:-90px;
+		width:420px;
+		margin-bottom:5px;
+		}
 
 .summary {
 		position:relative; 
