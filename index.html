@@ -258,22 +258,60 @@
       </header-->
       
       <hr id="e-mail"/>
-      <div class="cleft"> e-mail </div>
+      <div class="cleft"> E-mail </div>
       <div class="cright"> yszheda AT gmail DOT com</div>
 	<hr id="phone"/>
-      <div class="cleft"> phone </div>
+      <div class="cleft"> Phone </div>
       <div class="cright"> 0988473989/(886)988473989 </div>
       <hr id="mail"/>
-      <div class="cleft"> mail address </div>
+      <div class="cleft"> Mail address </div>
       <div class="cright"> EECS 836<br/>
         National Tsing Hua University<br/>
 		101 Section 2 Kuang Fu Road<br/>  
 		Hsinchu 30013<br/>
         Taiwan</div>
-<!--
+
 <hr id="map"/>
-      <div class="cleft"> physical address </div>
-    
+      <div class="cleft"> Physical address </div>
+	<head>  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4WoJWoqTuHrH5d5uMc1jhL6uZDsbBjPY&sensor=true">
+    </script>
+    <script type="text/javascript">
+	  var myCenter=new google.maps.LatLng(24.79497,120.992668);
+	  var marker;
+
+      function initialize() {
+        var mapOptions = {
+          center: myCenter,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+
+		marker=new google.maps.Marker({
+		  position:myCenter,
+		  animation:google.maps.Animation.BOUNCE
+		  });
+		
+		marker.setMap(map);
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"/>
+  </body>
+
+<!--  
     <div style="text-align:center; position: relative; top:50px;">
      <figure><iframe width="625" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=48.712302,2.169585&amp;hl=fr&amp;geocode=&amp;sll=48.712401,2.16965&amp;sspn=0.009543,0.016372&amp;vpsrc=0&amp;mra=mift&amp;mrsp=1&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=48.712401,2.16965&amp;spn=0.009543,0.016372&amp;output=embed"></iframe><br /><small><a href="http://maps.google.fr/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=48.712302,2.169585&amp;hl=fr&amp;geocode=&amp;sll=48.712401,2.16965&amp;sspn=0.009543,0.016372&amp;vpsrc=0&amp;mra=mift&amp;mrsp=1&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=48.712401,2.16965&amp;spn=0.009543,0.016372">Enlarge map</a></small></figure>
      </div>
