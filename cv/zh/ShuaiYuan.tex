@@ -1,0 +1,253 @@
+% This is a redistributed latex code of LaTeX Curriculum Vitae Template
+% Shuai Yuan, CS, zju
+%
+% Thanks: Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+\documentclass[letterpaper]{article}
+\usepackage[BoldFont, SlantFont, CJKchecksingle]{xeCJK}
+\usepackage{hyperref}
+\usepackage{geometry}
+% Uncomment the following lines to use the Palatino font.  Remove the
+% [osf] bit if you don't like the old style figures.
+%
+% \usepackage[T1]{fontenc}
+% \usepackage[osf]{mathpazo}
+% Set your name here
+\def\name{袁帅}
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science and technology},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+} \geometry{textheight=8.5in, textwidth=6in}
+% Customize page headers
+\pagestyle{myheadings} \markright{\name} \thispagestyle{empty}
+% Customize section headings
+\usepackage{sectsty}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+% Make lists without bullets
+% \renewenvironment{itemize}{
+%   \begin{list}{}{
+%     \setlength{\leftmargin}{1em}
+%   }
+% }{
+%   \end{list}
+% }
+\begin{document}
+\centerline{\huge\bf \name} \vspace{0.25in}
+\begin{minipage}[t]{0.8\textwidth}
+Department of Computer Science \\
+National Tsing Hua University \\
+Mobile: 0988473989/(886)988473989   \\
+Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com}\\
+Personal Profile: \url{http://yszheda.github.io} \\
+Blog: \url{http://galoisplusplus.gitcafe.com}
+\end{minipage}
+
+\section*{教育背景}
+\begin{itemize}
+\item 台湾国立清华大学资讯工程专业（Computer Science）硕士，2014.
+%    \begin{itemize}
+%    \item \textit{Overall GPA}: Your GPA
+%    \item \textit{Ranking}: Your Ranking
+%    \item \textit{Honors}: Your scholarship, year.
+%    \end{itemize}
+\item 浙江大学计算机科学与技术专业学士，2012.
+%    \begin{itemize}
+%    \item \textit{Overall GPA}: Your GPA
+%    \item \textit{Ranking}: Your Ranking
+%    \item \textit{Honors}: Your scholarship, year.
+%    \end{itemize}
+\end{itemize}
+
+\section*{Honor and Awards}
+\begin{itemize}
+\item Scholarship:
+    \begin{itemize}
+    \item Second prize of outstanding student scholarship and scholarship for academic, 2008--2009
+    \item Third prize of outstanding student scholarship and scholarship for academic, 2009--2010
+    \item Second prize of outstanding student scholarship and scholarship for academic, 2010--2011
+	\item Hong Hai/Foxconn scholarship, 2012--2013				
+    \end{itemize}
+\item Honor: outstanding student, 2008--2009, 2009--2010, 2010--2011
+\item Awards:
+    \begin{itemize}
+    \item Second prize of Zhejiang Province Calculus Contest, 2009
+    \item Third prize of Zhejiang University ACM Programming Contest, 2009
+    \item Second prize of Zhejiang University-Intel Embedded Online Contest, 2010
+    \item Outstanding thesis paper among undergraduate stundents, 2012
+    \end{itemize}
+\end{itemize}
+
+\section*{Current Research Fields}
+Cloud Computing, Storage System, Erasure Codes
+% \section*{Research Interest}
+% Your Interest (2-5 fileds)
+
+\section*{研究经历}
+
+\begin{itemize}
+% \item Lab member of Eagle Lab VIPA(Visual Interaction and Graphics) group (also named ``Microsoft Visual Perception Laboratory of Zhejiang University''), 2010--2012
+\item Lab member of Large-scale System Architecture (LSA) Lab, National Tsing Hua University, 2012--Current
+\item Research intern in LRI (Laboratoire de Recherche en Informatique) of the University of Paris XI, France, 2011,10--2012,4
+    \begin{itemize}
+	  % Rewrite in 2013
+	  \item Work on ``automated constraint verification for databases'' under the guidance of Prof.V\'eronique Benzaken and Prof. \'Evelyne Contejean.
+%	  \item Current research focuses on ``Automated constraints verification for databases''.
+	  \item Based on the observation that currently no real database management system (DBMS) have fully support the management of integrity constraints and run-time checking is time-consuming, we have present a compile-time verification strategy based on the weakest precondition and predicate transformer approaches.
+%		a strategy to verify the integrity constraints of databases at compile-time. 
+%		Our method is based on the weakest precondition and predicate transformer approaches. 
+		% Commented in 2013
+%	  \item With the help of the software verification platform Why3\href{http://why3.lri.fr/}{\tt (http://why3.lri.fr/)}, we implement integrity constraints checking for databases. All the process is fully automatic.
+    \end{itemize} 
+\item Lab member of Microsoft Visual Perception Laboratory of Zhejiang University, 2010--2012
+    \begin{itemize}
+	% rewrite in 2013	
+	  \item Work on ``scene audio recognition of images'' under the supervison of Prof. Mingli Song. 
+% details
+% We apply Probabilistic Latent Semantic Analysis (pLSA) and matching pursuit (MP) algorithms to extract the features of training images and sounds respectively. Then machine learning approach is used to find the corresponding environmental sounds for a newly-input image.
+
+
+%    \item Make a project of scene audio recognition of image. Probabilistic Latent Semantic Analysis (pLSA) and matching pursuit (MP) algorithms are applied to extract the features of training images and sounds respectively. Then machine learning approach is used to ﬁnd the corresponding environmental sounds for the speciﬁed image.
+%	\item  Read papers in the wide area of Speech-driven facial animation, Speech emotion recognition, AED (Audio event detection), Music emotion recognition, Sound localization, Unstructured audio scene recognition and also Image inpainting and Image completion.
+    \end{itemize}
+% \item Project leader of the regular expression search/match/replace engine, which belongs to the SRTP (Student Research Train Program), 2010,4--2011,5
+%     \begin{itemize}
+% 	\item This project was awarded as outstanding SRTP.
+% 	% \item The executable ﬁle and source code of the project is now available in Google code	\\
+% 	%   \href{http://code.google.com/p/regex-engine/}{\tt (http://code.google.com/p/regex-engine/)}
+% 	% \item  Learn the theory and grammar of regular expression and implement templates of regex (like regex of IP address). Use C++ boost::regex to implement the engine, which supports multi-grammars (Perl, Sed and POSIX standard regex grammar, \textmd{etc.}).
+% 	% \item Take advantage of SE (Software Engineering) and PM (Program Management) knowledge to make schedule and organize progress of the project.
+%     \end{itemize} 
+\end{itemize}
+
+%\section*{Academic Experience}
+%\begin{itemize}
+%\item \emph{Your TA/RA University}
+%    \begin{itemize}
+%    \item Research/Teaching  Assistant,
+%     for Prof. XXX,
+%     Year.
+%    \end{itemize}
+%\end{itemize}
+
+%\section*{Publications}
+%\begin{itemize}
+%\item Publication 1
+%\item Publication 2
+%\end{itemize}
+%\section*{Working Papers}
+%\begin{itemize}
+%\item Working Paper 1
+%\item Working Paper 2
+%\end{itemize}
+%\section*{Work in Progress}
+%\begin{itemize}
+%\item Paper in Preparation 1
+%\item Paper in Preparation 2
+%\end{itemize}
+%% \subsection*{Papers Under Review}
+%% \subsection*{Publications in Refereed Journals}
+
+%\section*{Computer Skills}
+%Matlab, Eviews, Stata, \LaTeX, and all software you know.
+
+\section*{项目经历}
+\begin{itemize}
+  \item GPU-RS: a GPGPU approach to accelerating Reed-Solomon codes for fault-Tolerance in RAID-like system.
+	\begin{itemize}
+	  \item Written in CUDA C. Source code and documents are available under GPLv3: \url{https://github.com/yszheda/GPU-RSCode}.
+	  \item Achieve a maximum speed-up of approximately 90 over the performance of traditional CPU-based Reed-Solomon Codes.
+	\end{itemize}
+  \item assertion-verification: implementation of the thesis ``automated constraint verification for databases''.
+	\begin{itemize}
+	  \item Written in Ocamllex and Ocamlyacc. Source code is available on Github: \\ \url{https://github.com/yszheda/assertion-verification}.
+	\end{itemize}
+  \item regex-engine: a Boost::regex based engine that supports regular expression matching, searching and replacement.
+    \begin{itemize}
+	  \item This project was part of the Student Research Train Program (SRTP) of Zhejiang University in 2010, and was awarded as outstanding SRTP.
+%  \item Project leader of the regular expression search/match/replace engine, which belongs to the SRTP (Student Research Train Program), 2010,4--2011,5
+%	\item This project was awarded as outstanding SRTP.
+	\item My role: a team leader and a programmer.
+	\item Written in C++. Source code and executable files are available on Google Code:
+
+	  \href{http://code.google.com/p/regex-engine/}{\tt (http://code.google.com/p/regex-engine/)}
+	\end{itemize}
+
+\end{itemize}
+
+For more projects, please refer to my profile on:
+\begin{itemize}
+%  \item \href{http://github.com/yszheda}{\tt Github} 
+%  \item \href{https://code.google.com/u/106717879882759479741/}{\tt Google Code}
+  \item Github: \url{http://github.com/yszheda} 
+  \item Google code: \url{https://code.google.com/u/yszheda@gmail.com/}
+\end{itemize}
+
+\section*{技能}
+\begin{itemize}
+% \item Language: English, Native Mandarin
+\item Programming Language: C, C++, Java, Matlab/Octave, Verilog HDL, Shell script(mainly bash), Ocaml.
+% Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
+\item Framework/API: Hadoop, CUDA, MPI, OpenGL, etc.
+\item Operating System: GNU/Linux (Currently an ArchLinux user), Windows.
+\item Version Control Tools: git, svn, cvs.
+\item IDE: Eclipse, Visual Studio, Xilinx ISE.
+% \item Applications: vim, Eclipse, Visual Studio, Xilinx ISE, svn, etc.
+\item Documentation: \LaTeX
+% \item Documentation: \LaTeX, MS Office
+\end{itemize}
+
+% \section*{Extracurricular Activities}
+% \begin{itemize}
+% \item Volunteer
+%     \begin{itemize}
+%     \item volunteer teacher: teach some members of Chinese People's Armed Police, who are graduated from junior middle school or primary school but eager to enter the Advanced Police School, and help them with their studies.
+%     \item assistant of library: put books in order and make the environment tidy.
+%     \item volunteer of the energy-conserving and environment-protective activity: popularize envi-
+% ronmental knowledge on the Hangzhou Canal Square.
+% 	\item volunteer assistant senior: guide the entering freshmen with their admission procedure
+% and class organization, also help them to adjust to the new university life.
+%     \end{itemize}
+% \item Literary and art activities
+%    \begin{itemize}
+%     \item the Mid-autumn Festival Celebrating Party of Computer Science and Technology College
+% and Software Engineering College, 2008: take part as a violin performer.
+%     \item the Mid-autumn Festival Celebrating Party of ChaoShan Residents' Association of Hangzhou,
+% 2008: take part as a violin performer.
+%     \item the Graduate Students' Admission Ceremony of Software Engineering College, 2008: take
+% part as a violin performer.
+% 	\item the Closing Ceremony of YuFeng Cultural Festival, 2008: take part as a violin performer.
+%   \end{itemize}
+% \item Social practice
+%     \begin{itemize}
+%     \item Social practice around Thousand Island Lake, 2009: survey the development of tourism, environmental conditions of the tourist site and environment-protective measures of the local government, and also popularize water resources protective knowledge in town and in the village nearby.
+%     \end{itemize}
+% \end{itemize}
+% 
+% 
+% \section*{Interests}
+% \begin{itemize}
+% \item violin, Classical music, badminton, hiking, table tennis
+% \end{itemize}
+
+\bigskip
+% Footer
+\begin{center}
+\begin{footnotesize}
+%Last updated: \today \\
+\end{footnotesize}
+\end{center}
+\end{document}
