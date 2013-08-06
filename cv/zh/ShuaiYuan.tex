@@ -52,12 +52,11 @@
 \begin{document}
 \centerline{\huge\bf \name} \vspace{0.25in}
 \begin{minipage}[t]{0.8\textwidth}
-Department of Computer Science \\
-National Tsing Hua University \\
-Mobile: 0988473989/(886)988473989   \\
+国立清华大学资讯工程系 \\
+手机：0988473989/(886)988473989   \\
 Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com}\\
-Personal Profile: \url{http://yszheda.github.io} \\
-Blog: \url{http://galoisplusplus.gitcafe.com}
+个人主页：\url{http://yszheda.github.io} \\
+技术博客：\url{http://galoisplusplus.gitcafe.com}
 \end{minipage}
 
 \section*{教育背景}
@@ -97,29 +96,29 @@ Blog: \url{http://galoisplusplus.gitcafe.com}
 
 \begin{itemize}
 % \item Lab member of Eagle Lab VIPA(Visual Interaction and Graphics) group (also named ``Microsoft Visual Perception Laboratory of Zhejiang University''), 2010--2012
-\item 国立清华大学LSA(Large-scale System Architecture)实验室成员, 2012年至今
-\item 法国巴黎十一大学LRI(Laboratoire de Recherche en Informatique)实验室研究实习生, 2011,10--2012,4
-    \begin{itemize}
-	  % Rewrite in 2013
-	  \item Work on ``automated constraint verification for databases'' under the guidance of Prof.V\'eronique Benzaken and Prof. \'Evelyne Contejean.
-%	  \item Current research focuses on ``Automated constraints verification for databases''.
-	  \item Based on the observation that currently no real database management system (DBMS) have fully support the management of integrity constraints and run-time checking is time-consuming, we have present a compile-time verification strategy based on the weakest precondition and predicate transformer approaches.
-%		a strategy to verify the integrity constraints of databases at compile-time. 
-%		Our method is based on the weakest precondition and predicate transformer approaches. 
-		% Commented in 2013
-%	  \item With the help of the software verification platform Why3\href{http://why3.lri.fr/}{\tt (http://why3.lri.fr/)}, we implement integrity constraints checking for databases. All the process is fully automatic.
-    \end{itemize} 
-\item 浙江大学－微软联合实验室, 2010--2012
-    \begin{itemize}
-	% rewrite in 2013	
-	  \item Work on ``scene audio recognition of images'' under the supervison of Prof. Mingli Song. 
-% details
-% We apply Probabilistic Latent Semantic Analysis (pLSA) and matching pursuit (MP) algorithms to extract the features of training images and sounds respectively. Then machine learning approach is used to find the corresponding environmental sounds for a newly-input image.
-
-
-%    \item Make a project of scene audio recognition of image. Probabilistic Latent Semantic Analysis (pLSA) and matching pursuit (MP) algorithms are applied to extract the features of training images and sounds respectively. Then machine learning approach is used to ﬁnd the corresponding environmental sounds for the speciﬁed image.
-%	\item  Read papers in the wide area of Speech-driven facial animation, Speech emotion recognition, AED (Audio event detection), Music emotion recognition, Sound localization, Unstructured audio scene recognition and also Image inpainting and Image completion.
-    \end{itemize}
+\item 国立清华大学LSA(Large-scale System Architecture)实验室成员，研究方向为erasure codes和cloud storage system，2012年至今
+\item 法国巴黎十一大学LRI(Laboratoire de Recherche en Informatique)实验室研究实习生，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
+%    \begin{itemize}
+%	  % Rewrite in 2013
+%	  \item Work on ``automated constraint verification for databases'' under the guidance of Prof.V\'eronique Benzaken and Prof. \'Evelyne Contejean.
+%%	  \item Current research focuses on ``Automated constraints verification for databases''.
+%	  \item Based on the observation that currently no real database management system (DBMS) have fully support the management of integrity constraints and run-time checking is time-consuming, we have present a compile-time verification strategy based on the weakest precondition and predicate transformer approaches.
+%%		a strategy to verify the integrity constraints of databases at compile-time. 
+%%		Our method is based on the weakest precondition and predicate transformer approaches. 
+%		% Commented in 2013
+%%	  \item With the help of the software verification platform Why3\href{http://why3.lri.fr/}{\tt (http://why3.lri.fr/)}, we implement integrity constraints checking for databases. All the process is fully automatic.
+%    \end{itemize} 
+\item 浙江大学－微软联合实验室，研究课题为“图像场景音频识别”，2010--2012
+%    \begin{itemize}
+%	% rewrite in 2013	
+%	  \item Work on ``scene audio recognition of images'' under the supervison of Prof. Mingli Song. 
+%% details
+%% We apply Probabilistic Latent Semantic Analysis (pLSA) and matching pursuit (MP) algorithms to extract the features of training images and sounds respectively. Then machine learning approach is used to find the corresponding environmental sounds for a newly-input image.
+%
+%
+%%    \item Make a project of scene audio recognition of image. Probabilistic Latent Semantic Analysis (pLSA) and matching pursuit (MP) algorithms are applied to extract the features of training images and sounds respectively. Then machine learning approach is used to ﬁnd the corresponding environmental sounds for the speciﬁed image.
+%%	\item  Read papers in the wide area of Speech-driven facial animation, Speech emotion recognition, AED (Audio event detection), Music emotion recognition, Sound localization, Unstructured audio scene recognition and also Image inpainting and Image completion.
+%    \end{itemize}
 % \item Project leader of the regular expression search/match/replace engine, which belongs to the SRTP (Student Research Train Program), 2010,4--2011,5
 %     \begin{itemize}
 % 	\item This project was awarded as outstanding SRTP.
@@ -163,48 +162,62 @@ Blog: \url{http://galoisplusplus.gitcafe.com}
 
 \section*{项目经历}
 \begin{itemize}
-  \item GPU-RS: a GPGPU approach to accelerating Reed-Solomon codes for fault-Tolerance in RAID-like system.
+  \item GPU-RS：Reed-Solomon code的GPGPU加速。
 	\begin{itemize}
-	  \item Written in CUDA C. Source code and documents are available under GPLv3: \url{https://github.com/yszheda/GPU-RSCode}.
-	  \item Achieve a maximum speed-up of approximately 90 over the performance of traditional CPU-based Reed-Solomon Codes.
+	  \item 采用CUDA C所写。项目源代码开源并托管在Github上：\\
+			  \url{https://github.com/yszheda/GPU-RSCode}
 	\end{itemize}
-  \item assertion-verification: implementation of the thesis ``automated constraint verification for databases''.
+  \item sim-outorder-extend: SimpleScalar sim-outorder体系结构模拟器拓展。
 	\begin{itemize}
-	  \item Written in Ocamllex and Ocamlyacc. Source code is available on Github: \\ \url{https://github.com/yszheda/assertion-verification}.
+	  \item 采用C所写。项目源代码开源并托管在Github上：\\
+			  \url{https://github.com/yszheda/sim-outorder-extend}
+	\end{itemize}
+  \item assertion-verification：``数据库约束的自动化验证''课题的实现。
+	\begin{itemize}
+	  \item 采用Ocamllex和Ocamlyacc所写。项目源代码开源并托管在Github上：\\
+			  \url{https://github.com/yszheda/assertion-verification}
+	\end{itemize}
+  \item E-go：``易购''电子购物网站。
+	\begin{itemize}
+	  \item 采用JSP、Servlet所写，本人负责商品查询、排序及用户信息管理模块。项目源代码开源并托管在Google Code上：\\
+			  \url{https://code.google.com/p/e-go/}
 	\end{itemize}
   \item regex-engine: 字符串(匹配、查找、替换)引擎。
     \begin{itemize}
-    \item 第十三期大学生科研训练计划(SRTP)优秀项目。
-	  \item This project was part of the Student Research Train Program (SRTP) of Zhejiang University in 2010, and was awarded as outstanding SRTP.
-%  \item Project leader of the regular expression search/match/replace engine, which belongs to the SRTP (Student Research Train Program), 2010,4--2011,5
-%	\item This project was awarded as outstanding SRTP.
-	\item My role: a team leader and a programmer.
-	\item Written in C++ Boost::regex. Source code and executable files are available on Google Code:
-
-	  \href{http://code.google.com/p/regex-engine/}{\tt (http://code.google.com/p/regex-engine/)}
+	  \item 采用C++ Boost::regex库所写，本人担任组长及主要开发者。项目源代码开源并托管在Google Code上：\\
+			  \url{http://code.google.com/p/regex-engine/}
+      \item 该项目被评为第十三期大学生科研训练计划(SRTP)优秀项目。
+%	  \item This project was part of the Student Research Train Program (SRTP) of Zhejiang University in 2010, and was awarded as outstanding SRTP.
+%%     \item Project leader of the regular expression search/match/replace engine, which belongs to the SRTP (Student Research Train Program), 2010,4--2011,5
+%%	  \item This project was awarded as outstanding SRTP.
+%	  \item My role: a team leader and a programmer.
+%	  \item Written in C++ Boost::regex. Source code and executable files are available on Google Code:
+%
+%	  \href{http://code.google.com/p/regex-engine/}{\tt (http://code.google.com/p/regex-engine/)}
 	\end{itemize}
 
 \end{itemize}
 
-For more projects, please refer to my profile on:
+% For more projects, please refer to my profile on:
+其他开源项目请访问：
 \begin{itemize}
 %  \item \href{http://github.com/yszheda}{\tt Github} 
 %  \item \href{https://code.google.com/u/106717879882759479741/}{\tt Google Code}
-  \item Github: \url{http://github.com/yszheda} 
-  \item Google code: \url{https://code.google.com/u/yszheda@gmail.com/}
+  \item Github主页：\url{http://github.com/yszheda} 
+  \item Google code主页：\url{https://code.google.com/u/yszheda@gmail.com/}
 \end{itemize}
 
 \section*{技能}
 \begin{itemize}
 % \item Language: English, Native Mandarin
-\item Programming Language: C, C++, Java, Matlab/Octave, Verilog HDL, Shell script(mainly bash), Ocaml.
+\item 编程语言：C, C++, Java, Matlab/Octave, Verilog HDL, Shell script（主要为bash）, Ocaml
 % Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
-\item Framework/API: Hadoop, CUDA, MPI, OpenGL, etc.
-\item Operating System: GNU/Linux (Currently an ArchLinux user), Windows.
-\item Version Control Tools: git, svn, cvs.
-\item IDE: Eclipse, Visual Studio, Xilinx ISE.
+\item 编程技术：并行计算（Hadoop, MPI, CUDA）, OpenGL等
+\item 操作系统：GNU/Linux（目前使用Arch Linux）, Windows
+\item 版本控制工具：主要使用git，使用过svn和cvs
+\item IDE：Eclipse, Visual Studio, Xilinx ISE
 % \item Applications: vim, Eclipse, Visual Studio, Xilinx ISE, svn, etc.
-\item Documentation: \LaTeX
+\item 文档工具：\LaTeX
 % \item Documentation: \LaTeX, MS Office
 \end{itemize}
 
