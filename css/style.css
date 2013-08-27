@@ -575,7 +575,7 @@ figure figcaption a:hover span{
 .research{
 	font-family: "Computer Modern";
 /*	src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf'); */
-	src: url('../fonts/cmunss.otf');
+	src: url('/fonts/cmunss.otf');
 	font-size:120%;
 	font-weight:normal;
 	color:#575757;
