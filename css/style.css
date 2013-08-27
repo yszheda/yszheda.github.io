@@ -152,9 +152,10 @@ h2{
 .languages {
 		position:relative; 
 		top:0px; 
-		left:-90px;
-		width:420px;
-		margin-right:2px;
+		/*left:-100px;*/
+		/*width:420px;*/
+		/*white-space:nowrap;*/
+		margin-right:5px;
 		margin-bottom:5px;
 		}
 
