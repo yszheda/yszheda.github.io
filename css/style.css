@@ -2,16 +2,15 @@
 /* CSS Document */
 
 body{
-//	background:url(../images/bg5.png) repeat-y center;
 	background:url(../images/bg5.png) repeat-y center;
 	color:#8f8f8f;
 }
 
 .intro {
-//	font-family: "Computer Modern";
-//	src: url('../fonts/cmunss.otf');
+/*	font-family: "Computer Modern"; */
+/*	src: url('../fonts/cmunss.otf');*/
 
-//	position:relative; 
+/*	position:relative; */
 	position:absolute; 
 	top:0px; 
 	left:150px;
@@ -168,7 +167,7 @@ h2{
 .summary hr {
 	margin: 3px 0;
 	color:#9C3F30;
-	background-color: #9C3F3;
+	background-color: #9C3F30;
 
 }
 
@@ -256,7 +255,6 @@ nav ul li a:hover{
 	color:#634d4a;
 }
 nav ul li.active{
-//	background:url(../images/nav_active6.png) no-repeat 25px  /** -8px avec 1 */ /* 26px avec original */.1em;
 	background:url(../images/nav_active.png) no-repeat 25px  /** -8px avec 1 */ /* 26px avec original */.1em;
 }
 nav ul li.active a{
@@ -576,7 +574,7 @@ figure figcaption a:hover span{
 /* research */
 .research{
 	font-family: "Computer Modern";
-//	src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+/*	src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf'); */
 	src: url('../fonts/cmunss.otf');
 	font-size:120%;
 	font-weight:normal;
@@ -612,9 +610,9 @@ figure figcaption a:hover span{
 }
 .skills li li{
 	padding:2px;
-//	border-bottom:3px solid #d5e7f3;	
+/*	border-bottom:3px solid #d5e7f3;	*/
 	font-weight:normal;
-	border-bottom:none;
+	border-bottom-style:none;
 	
 	font-family: "Computer Modern";
 	font-size:100%;
@@ -676,11 +674,11 @@ figure figcaption a:hover span{
 	display:block;
 }
 .social li.twitter a{
-//	background:url(../images/icon_twitter.png) no-repeat;
-//	background:url(../images/icon_twitter.gif) no-repeat;
+/*	background:url(../images/icon_twitter.png) no-repeat; */
+/*	background:url(../images/icon_twitter.gif) no-repeat; */
 	background:url(../images/icon_twitter_1.gif) no-repeat;
-//	background:url(../images/icon_twitter_2.png) no-repeat;
-//	background:url(../images/icon_twitter_3.jpg) no-repeat;
+/*	background:url(../images/icon_twitter_2.png) no-repeat; */
+/*	background:url(../images/icon_twitter_3.jpg) no-repeat; */
 	width:29px;
 	height:29px;
 	display:block;
