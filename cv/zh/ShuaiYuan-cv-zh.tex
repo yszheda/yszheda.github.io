@@ -10,6 +10,10 @@
 % this notice and the above URL in the source code if you choose to
 % redistribute this file.
 \documentclass[letterpaper]{article}
+\expandafter\let\csname xetex_suppressfontnotfounderror:D\endcsname
+  \suppressfontnotfounderror
+  \usepackage{fontspec}
+
 \usepackage[BoldFont, SlantFont, CJKchecksingle]{xeCJK}
 \usepackage{hyperref}
 \usepackage{geometry}
@@ -100,21 +104,23 @@
 \begin{itemize}
     \item 乐其新游地工作室游戏开发工程师，2014年7月至今
         \begin{itemize}
-            \item 从头参与2D手游项目开发至今（目前游戏已上线：
+            \item 作为公司第一个2D手游项目的初始开发成员至今（目前游戏已上线：
                 \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
                 \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
-            \item 主要工作为采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}做客户端开发。
+            \item 现为项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除了客户端开发外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}。
             \item 迄今为止，我的主要贡献有：
                 \begin{itemize}
-                    \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}）。
+                    \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}）。
                     \item 定制UI控件，其中部分已在Github上开源：
                         \begin{itemize}
                             \item \url{https://github.com/yszheda/cocos2d-x-GridView}
                             \item \url{https://github.com/yszheda/cocos2d-x-irregular-button}
                             \item \url{https://github.com/yszheda/quickx-extensions}
                         \end{itemize}
+                    \item 开发Bash、Python脚本，制作和管理Docker镜像，用于自动化某些开发流程、线上错误信息整理和分发、代码检查、批处理策划表、服务器单接口压测等等。
+                    \item 游戏功能模块开发，包括但不限于客户端与服务器端的战斗。
                     \item 改善客户端做UI界面流程，减少资源占用，优化游戏性能。
-                    \item 游戏功能模块开发，例如战斗及战报播放、远征战斗、武将系统、武将召唤系统、武将强化系统、武将进化系统、世界地图系统、副本系统、地下城系统、好友系统、新手目标系统、新手卡等礼包及活动、创建角色系统等等。
+                    \item 负责客户端code review和新人培训。
                 \end{itemize}
         \end{itemize}
 \end{itemize}
@@ -165,9 +171,10 @@
 
 曾经参与过以下开源项目：
 \begin{itemize}
-    \item 游戏引擎\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}
-    \item octopress插件\href{https://github.com/huangbowen521/octopress-syncPost}{octopress-syncPost} （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）
-    \item Linux文件系统扩展属性Python库\href{https://github.com/xattr/xattr}{\tt xattr}（提交了一个简单的patch：\href{https://github.com/xattr/xattr/issues/8}{\tt PR\#8}，已被接受）
+    \item 游戏引擎\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。
+    \item octopress插件\href{https://github.com/huangbowen521/octopress-syncPost}{octopress-syncPost} （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）。
+    \item nginx工具\href{https://github.com/openresty/openresty-devel-utils}{\tt nginx-devel-utils}（给lua内存泄漏工具提交了一个简单的patch，已被接受）。
+    \item Linux文件系统扩展属性Python库\href{https://github.com/xattr/xattr}{\tt xattr}（提交了一个简单的patch：\href{https://github.com/xattr/xattr/issues/8}{\tt PR\#8}，已被接受）。
 \end{itemize}
 
 % 其他开源项目请访问：
@@ -179,11 +186,11 @@
 \section*{技能}
 \begin{itemize}
 % \item Language: English, Native Mandarin
-    \item 编程语言：C, C++, Lua, Matlab/Octave, Verilog HDL, Shell script（主要为bash）
+    \item 编程语言：Lua, C, C++, Matlab/Octave, Verilog HDL, Shell script（主要为bash）
 % Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
-    \item 编程技术：游戏引擎（cocos2d-x）, 并行计算（CUDA）等, 开发手游时对OpenGL ES有一些接触。
+    \item 编程技术：游戏引擎（cocos2d-x）, 并行计算（CUDA）, OpenResty等。
     \item 操作系统：GNU/Linux（目前使用Arch Linux）, Windows
-    \item 版本控制工具：主要使用git，使用过svn（目前已弃用svn，改用git-svn）
+    \item 版本控制工具：主要使用git，使用过svn（已弃用svn，改用git-svn）
     \item 调试工具：gdb
     \item IDE：Eclipse, Visual Studio, Xilinx ISE（目前较多项目没有用IDE，而是写Makefile或用automake）
     \item 编辑器：Vim
