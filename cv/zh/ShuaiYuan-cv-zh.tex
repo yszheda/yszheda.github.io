@@ -61,9 +61,9 @@
 % 手机：0988473989/(886)988473989   \\
 % 手机： (0886)988473989/(86)13539623264   \\
     手机： (86)13539623264   \\
-    % Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com}\\
-    个人主页：\url{http://yszheda.github.io} \\
-    技术博客：\url{http://galoisplusplus.coding.me}
+    Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com} \\
+    % 个人主页：\url{http://yszheda.github.io} \\
+    技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}
 \end{minipage}
 
 \section*{教育背景}
@@ -104,10 +104,10 @@
 \begin{itemize}
     \item 乐其新游地工作室游戏开发工程师，2014年7月至今
         \begin{itemize}
-            \item 作为公司第一个2D手游项目的初始开发成员至今（目前游戏已上线：
+            \item 作为公司第一个大型2D手游项目的初始开发成员至今（目前游戏已上线：
                 \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
                 \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
-            \item 现为项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除了客户端开发外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}。
+            \item 项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除此以外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}。
             \item 迄今为止，我的主要贡献有：
                 \begin{itemize}
                     \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}）。
@@ -120,24 +120,30 @@
                     \item 开发Bash、Python脚本，制作和管理Docker镜像，用于自动化某些开发流程、线上错误信息整理和分发、代码检查、批处理策划表、服务器单接口压测等等。
                     \item 游戏功能模块开发，包括但不限于客户端与服务器端的战斗。
                     \item 改善客户端做UI界面流程，减少资源占用，优化游戏性能。
-                    \item 负责客户端code review和新人培训。
+                    \item 负责客户端code review和新人指导。
                 \end{itemize}
         \end{itemize}
 \end{itemize}
 
 \section*{研究经历}
 \begin{itemize}
-    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，研究方向为erasure codes和cloud storage system，2012--2014
-    \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
-    \item 浙江大学－微软联合实验室，研究课题为“图像场景音频识别”，2010--2012
+    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为erasure codes、cloud storage system和GPGPU，期间曾任导师并行计算课程的CUDA实验课TA，2012--2014
+    \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
+    \item 浙江大学－微软联合实验室，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
 \end{itemize}
 
 \section*{项目经历}
 \begin{itemize}
-    \item GPU-RSCode（2012,12--2013,3）：Reed-Solomon code的GPGPU加速。
+    \item GPU-RSCode（2012,12--2014,6）：Reed-Solomon code的GPGPU加速。
         \begin{itemize}
             \item 采用CUDA C/C++。项目源代码开源并托管在Github上：\\
                 \url{https://github.com/yszheda/GPU-RSCode}
+            \item 与CPU上性能最好的Reed-Solomon code库Jerasure相比，有14.71倍的加速比。 
+        \end{itemize}
+    \item GPU-knn（2012,9--2013,1）：用GPU加速k最近邻居算法。
+        \begin{itemize}
+            \item 分为四个子项目，采用CUDA、OpenCL、pthread、MPI。项目源代码开源并托管在Github上：\\
+                \url{https://github.com/yszheda/GPU-knn}
         \end{itemize}
 %  \item sim-outorder-extend（2013,3--2013,5）：SimpleScalar sim-outorder体系结构模拟器拓展。
 %	\begin{itemize}
