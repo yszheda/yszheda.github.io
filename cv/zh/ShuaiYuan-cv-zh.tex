@@ -62,7 +62,7 @@
 % 手机： (0886)988473989/(86)13539623264   \\
     手机： (86)13539623264   \\
     Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com} \\
-    % 个人主页：\url{http://yszheda.github.io} \\
+    个人主页：\url{http://yszheda.github.io} \\
     技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}
 \end{minipage}
 
@@ -96,7 +96,7 @@
 \end{itemize}
 
 % \section*{研究领域}
-% Cloud Storage System, Erasure Codes.
+% GPGPU, Cloud Storage System, Erasure Codes.
 % \section*{Research Interest}
 % Your Interest (2-5 fileds)
 
@@ -111,12 +111,13 @@
             \item 迄今为止，我的主要贡献有：
                 \begin{itemize}
                     \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}）。
-                    \item 定制UI控件，其中部分已在Github上开源：
-                        \begin{itemize}
-                            \item \url{https://github.com/yszheda/cocos2d-x-GridView}
-                            \item \url{https://github.com/yszheda/cocos2d-x-irregular-button}
-                            \item \url{https://github.com/yszheda/quickx-extensions}
-                        \end{itemize}
+                    \item 定制UI控件。
+                    % \item 定制UI控件，其中部分已在Github上开源：
+                    %     \begin{itemize}
+                    %         \item \url{https://github.com/yszheda/cocos2d-x-GridView}
+                    %         \item \url{https://github.com/yszheda/cocos2d-x-irregular-button}
+                    %         \item \url{https://github.com/yszheda/quickx-extensions}
+                    %     \end{itemize}
                     \item 开发Bash、Python脚本，制作和管理Docker镜像，用于自动化某些开发流程、线上错误信息整理和分发、代码检查、批处理策划表、服务器单接口压测等等。
                     \item 游戏功能模块开发，包括但不限于客户端与服务器端的战斗。
                     \item 改善客户端做UI界面流程，减少资源占用，优化游戏性能。
@@ -127,7 +128,7 @@
 
 \section*{研究经历}
 \begin{itemize}
-    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为erasure codes、cloud storage system和GPGPU，期间曾任导师并行计算课程的CUDA实验课TA，2012--2014
+    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课TA，2012--2014
     \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
     \item 浙江大学－微软联合实验室，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
 \end{itemize}
@@ -177,10 +178,10 @@
 
 曾经参与过以下开源项目：
 \begin{itemize}
-    \item 游戏引擎\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。
-    \item octopress插件\href{https://github.com/huangbowen521/octopress-syncPost}{octopress-syncPost} （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）。
-    \item nginx工具\href{https://github.com/openresty/openresty-devel-utils}{\tt nginx-devel-utils}（给lua内存泄漏工具提交了一个简单的patch，已被接受）。
-    \item Linux文件系统扩展属性Python库\href{https://github.com/xattr/xattr}{\tt xattr}（提交了一个简单的patch：\href{https://github.com/xattr/xattr/issues/8}{\tt PR\#8}，已被接受）。
+    \item 游戏引擎quick-cocos2d-x。
+    \item octopress插件octopress-syncPost （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）。
+    \item nginx工具nginx-devel-utils（给lua内存泄漏工具提交了一个简单的patch，已被接受）。
+    \item Linux文件系统扩展属性Python库xattr（提交了一个简单的patch，已被接受）。
 \end{itemize}
 
 % 其他开源项目请访问：
@@ -194,14 +195,14 @@
 % \item Language: English, Native Mandarin
     \item 编程语言：Lua, C, C++, Matlab/Octave, Verilog HDL, Shell script（主要为bash）
 % Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
-    \item 编程技术：游戏引擎（cocos2d-x）, 并行计算（CUDA）, OpenResty等。
+    \item 编程技术：游戏开发（cocos2d-x）, 并行计算（CUDA, MPI）, Docker, OpenResty等。
     \item 操作系统：GNU/Linux（目前使用Arch Linux）, Windows
-    \item 版本控制工具：主要使用git，使用过svn（已弃用svn，改用git-svn）
-    \item 调试工具：gdb
-    \item IDE：Eclipse, Visual Studio, Xilinx ISE（目前较多项目没有用IDE，而是写Makefile或用automake）
-    \item 编辑器：Vim
+    \item IDE等编程工具：XCode, Eclipse, Visual Studio, Xilinx ISE（个人项目一般不用IDE，而是用Vim做编辑器，写Makefile或用automake工具做构建，用gdb、valgrind调试。熟悉CUDA的cuda-memcheck、cuda-gdb、nvprof等工具。）
+    \item 版本控制工具：主要使用git，使用过svn（目前用git-svn代替）
+%    \item 调试工具：gdb
+%    \item 编辑器：Vim
 % \item Applications: vim, Eclipse, Visual Studio, Xilinx ISE, svn, etc.
-    \item 文档工具：\LaTeX
+%    \item 文档工具：\LaTeX
 % \item Documentation: \LaTeX, MS Office
 \end{itemize}
 
