@@ -56,7 +56,7 @@
 \begin{document}
 \centerline{\huge\bf \name} \vspace{0.25in}
 \begin{minipage}[t]{0.8\textwidth}
-    乐其新游地工作室游戏开发工程师 \\
+%    乐其新游地工作室游戏开发工程师 \\
 % 台湾国立清华大学资讯工程系 \\
 % 手机：0988473989/(886)988473989   \\
 % 手机： (0886)988473989/(86)13539623264   \\
@@ -82,23 +82,12 @@
 %    \end{itemize}
 \end{itemize}
 
-\section*{获奖情况}
+\section*{研究经历}
 \begin{itemize}
-    \item 乐其公司优秀员工, 2014--2015
-    \item 鸿海陆生奖学金, 2012--2013				
-    \item 浙江大学优秀本科毕业论文, 2012
-    \item 学业优秀二等奖学金及优秀学生二等奖学金, 2010--2011
-    \item 浙江大学-Intel嵌入式知识竞赛二等奖, 2010
-    \item 学业优秀三等奖学金及优秀学生三等奖学金, 2009--2010
-    \item 浙江省大学生高等数学（微积分）竞赛二等奖, 2009
-    \item 浙江大学ACM竞赛三等奖, 2009
-    \item 学业优秀二等奖学金及优秀学生二等奖学金, 2008--2009
+    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课助教，2012--2014
+    \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
+    \item 浙江大学－微软联合实验室，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
 \end{itemize}
-
-% \section*{研究领域}
-% GPGPU, Cloud Storage System, Erasure Codes.
-% \section*{Research Interest}
-% Your Interest (2-5 fileds)
 
 \section*{工作经历}
 \begin{itemize}
@@ -107,7 +96,7 @@
             \item 作为公司第一个大型2D手游项目的初始开发成员至今（目前游戏已上线：
                 \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
                 \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
-            \item 项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除此以外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}。
+            \item 项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除此以外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}开发。
             \item 迄今为止，我的主要贡献有：
                 \begin{itemize}
                     \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}）。
@@ -126,35 +115,31 @@
         \end{itemize}
 \end{itemize}
 
-\section*{研究经历}
-\begin{itemize}
-    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课TA，2012--2014
-    \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
-    \item 浙江大学－微软联合实验室，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
-\end{itemize}
-
 \section*{项目经历}
 \begin{itemize}
     \item GPU-RSCode（2012,12--2014,6）：Reed-Solomon code的GPGPU加速。
         \begin{itemize}
-            \item 采用CUDA C/C++。项目源代码开源并托管在Github上：\\
+            \item 采用\textbf{CUDA C/C++}。项目源代码开源并托管在Github上：\\
                 \url{https://github.com/yszheda/GPU-RSCode}
-            \item 与CPU上性能最好的Reed-Solomon code库Jerasure相比，有14.71倍的加速比。 
+            \item 与CPU上性能最好的Reed-Solomon code开源库Jerasure相比，有14.71倍的加速比。
         \end{itemize}
     \item GPU-knn（2012,9--2013,1）：用GPU加速k最近邻居算法。
         \begin{itemize}
-            \item 分为四个子项目，采用CUDA、OpenCL、pthread、MPI。项目源代码开源并托管在Github上：\\
-                \url{https://github.com/yszheda/GPU-knn}
+            \item 分为四个子项目，采用\textbf{CUDA、OpenCL、pthread、MPI}开发，支持在多台机器多张GPU卡上运行。
+                % 项目源代码开源并托管在Github上：\\
+                \\ \url{https://github.com/yszheda/GPU-knn}
         \end{itemize}
-%  \item sim-outorder-extend（2013,3--2013,5）：SimpleScalar sim-outorder体系结构模拟器拓展。
-%	\begin{itemize}
-%	  \item 采用C所写。项目源代码开源并托管在Github上：\\
-%			  \url{https://github.com/yszheda/sim-outorder-extend}
-%	\end{itemize}
+    \item sim-outorder-extend（2013,3--2013,5）：SimpleScalar体系结构模拟器sim-outorder拓展。
+        \begin{itemize}
+            \item 采用\textbf{C}开发，实现Alpha 21264 dynamic branch predictor及四种cache replacement policy支持。
+                % 项目源代码开源并托管在Github上：\\
+                \\ \url{https://github.com/yszheda/sim-outorder-extend}
+        \end{itemize}
     \item assertion-verification（2011,9--2012,3）：基于程序验证平台Why3实现一种数据库约束的编译时间自动化验证。
         \begin{itemize}
-            \item 采用Ocamllex和Ocamlyacc。项目源代码开源并托管在Github上：\\
-                \url{https://github.com/yszheda/assertion-verification}
+            \item 采用\textbf{Ocamllex}和\textbf{Ocamlyacc}开发。
+                % 项目源代码开源并托管在Github上：\\
+                \\ \url{https://github.com/yszheda/assertion-verification}
         \end{itemize}
 %  \item E-go（2011,3--2011,6）：``易购''电子购物网站。
 %	\begin{itemize}
@@ -178,7 +163,7 @@
 
 曾经参与过以下开源项目：
 \begin{itemize}
-    \item 游戏引擎quick-cocos2d-x。
+    \item 跨平台游戏开发框架quick-cocos2d-x。
     \item octopress插件octopress-syncPost （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）。
     \item nginx工具nginx-devel-utils（给lua内存泄漏工具提交了一个简单的patch，已被接受）。
     \item Linux文件系统扩展属性Python库xattr（提交了一个简单的patch，已被接受）。
@@ -190,21 +175,42 @@
 %     \item Google code主页：\url{https://code.google.com/u/yszheda@gmail.com/}
 % \end{itemize}
 
+% \section*{研究领域}
+% GPGPU, Cloud Storage System, Erasure Codes.
+% \section*{Research Interest}
+% Your Interest (2-5 fileds)
+
 \section*{技能}
 \begin{itemize}
 % \item Language: English, Native Mandarin
-    \item 编程语言：Lua, C, C++, Matlab/Octave, Verilog HDL, Shell script（主要为bash）
+    % \item 编程语言：\textbf{Lua}, \textbf{C}, \textbf{C++}, \textbf{Bash}, \textbf{Octave/Matlab}, Verilog HDL, Shell script（主要为bash）
+    \item 编程语言：\textbf{Lua}, \textbf{C}, \textbf{C++}, \textbf{Bash}，曾经使用过\textbf{Python}, \textbf{Ruby}, \textbf{Java}, \textbf{OCaml}, \textbf{Octave/Matlab}做开发。
 % Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
-    \item 编程技术：游戏开发（cocos2d-x）, 并行计算（CUDA, MPI）, Docker, OpenResty等。
-    \item 操作系统：GNU/Linux（目前使用Arch Linux）, Windows
-    \item IDE等编程工具：XCode, Eclipse, Visual Studio, Xilinx ISE（个人项目一般不用IDE，而是用Vim做编辑器，写Makefile或用automake工具做构建，用gdb、valgrind调试。熟悉CUDA的cuda-memcheck、cuda-gdb、nvprof等工具。）
-    \item 版本控制工具：主要使用git，使用过svn（目前用git-svn代替）
+    \item 编程技术：并行计算（\textbf{CUDA}, \textbf{MPI}）, 游戏开发（\textbf{cocos2d-x}）等。
+    % \item IDE等编程工具：XCode, Eclipse, Visual Studio, Xilinx ISE（个人项目一般不用IDE，而是用Vim做编辑器，写Makefile或用automake工具做构建，用gdb、valgrind调试。熟悉CUDA的cuda-memcheck、cuda-gdb、nvprof等工具。）
+    \item IDE等编程工具：\textbf{XCode}, \textbf{Eclipse}等（个人项目一般不用IDE，平时用\textbf{Vim}做编辑器，写\textbf{Makefile}或用\textbf{automake}工具做构建，用\textbf{gdb}、\textbf{valgrind}调试。熟悉CUDA的\textbf{cuda-memcheck}、\textbf{cuda-gdb}、\textbf{nvprof}等工具。使用\textbf{adb}、\textbf{ndk-stack}排查安卓应用的问题）。
+    \item 版本控制工具：主要使用\textbf{git}，曾使用过\textbf{svn}（目前用\textbf{git-svn}代替）和老掉渣的\textbf{cvs}。
+    \item 操作系统：\textbf{GNU/Linux}（目前使用Arch Linux，使用过Ubuntu、Debian、CentOS）。
 %    \item 调试工具：gdb
 %    \item 编辑器：Vim
 % \item Applications: vim, Eclipse, Visual Studio, Xilinx ISE, svn, etc.
 %    \item 文档工具：\LaTeX
 % \item Documentation: \LaTeX, MS Office
 \end{itemize}
+
+\section*{获奖情况}
+\begin{itemize}
+    \item 乐其公司优秀员工, 2014--2015
+    \item 鸿海陆生奖学金, 2012--2013				
+    \item 浙江大学优秀本科毕业论文, 2012
+    \item 学业优秀二等奖学金及优秀学生二等奖学金, 2010--2011
+    \item 浙江大学-Intel嵌入式知识竞赛二等奖, 2010
+    \item 学业优秀三等奖学金及优秀学生三等奖学金, 2009--2010
+    \item 浙江省大学生高等数学（微积分）竞赛二等奖, 2009
+    \item 浙江大学ACM竞赛三等奖, 2009
+    \item 学业优秀二等奖学金及优秀学生二等奖学金, 2008--2009
+\end{itemize}
+
 
 % \section*{Extracurricular Activities}
 % \begin{itemize}
