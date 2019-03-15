@@ -11,8 +11,8 @@
 % redistribute this file.
 \documentclass[letterpaper]{article}
 \expandafter\let\csname xetex_suppressfontnotfounderror:D\endcsname
-  \suppressfontnotfounderror
-  \usepackage{fontspec}
+\suppressfontnotfounderror
+\usepackage{fontspec}
 
 \usepackage[BoldFont, SlantFont, CJKchecksingle]{xeCJK}
 \usepackage{hyperref}
@@ -30,13 +30,13 @@
 \def\name{袁帅}
 % The following metadata will show up in the PDF properties
 \hypersetup{
-    colorlinks = true,
-    urlcolor = black,
-    pdfauthor = {\name},
-    pdfkeywords = {computer science and technology},
-    pdftitle = {\name: Curriculum Vitae},
-    pdfsubject = {Curriculum Vitae},
-    pdfpagemode = UseNone
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science and technology},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
 } \geometry{textheight=8.5in, textwidth=6in}
 % Customize page headers
 \pagestyle{myheadings} \markright{\name} \thispagestyle{empty}
@@ -60,21 +60,22 @@
 % 台湾国立清华大学资讯工程系 \\
 % 手机：0988473989/(886)988473989   \\
 % 手机： (0886)988473989/(86)13539623264   \\
-    手机： (86)13539623264   \\
-    Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com} \\
-    个人主页：\url{http://yszheda.github.io} \\
-    技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}
+  手机： (86)13539623264   \\
+  Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com} \\
+  个人主页：\url{http://yszheda.github.io} \\
+  % 技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}
+  博客：\url{http://galoisplusplus.coding.me}
 \end{minipage}
 
 \section*{教育背景}
 \begin{itemize}
-    \item 台湾国立清华大学资讯工程专业（Computer Science）硕士，2012--2014 (GPA: 4.23/4.3).
+  \item 台湾国立清华大学资讯工程专业（Computer Science）硕士，2012--2014 (GPA: 4.23/4.3).
 %    \begin{itemize}
 %    \item \textit{Overall GPA}: Your GPA
 %    \item \textit{Ranking}: Your Ranking
 %    \item \textit{Honors}: Your scholarship, year.
 %    \end{itemize}
-    \item 浙江大学计算机科学与技术专业学士，2008--2012 (GPA: 3.84/4.0).
+  \item 浙江大学计算机科学与技术专业学士，2008--2012 (GPA: 3.84/4.0).
 %    \begin{itemize}
 %    \item \textit{Overall GPA}: Your GPA
 %    \item \textit{Ranking}: Your Ranking
@@ -84,70 +85,105 @@
 
 \section*{研究经历}
 \begin{itemize}
-    \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课助教，2012--2014
-    \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
-    \item 浙江大学－微软联合实验室，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
+  \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课助教，2012--2014
+  \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
+  \item 浙江大学－微软联合实验室成员，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
 \end{itemize}
 
 \section*{工作经历}
 \begin{itemize}
-    \item 珠海习悦公司异构并行加速研发工程师，2017年5月至今
+  \item 蓝胖子机器人公司软件工程师，2018年10月至今
+    \begin{itemize}
+      \item collision detection及motion planning相关优化。
+    \end{itemize}
+  \item 图麟科技公司异构并行计算工程师，2017年8月-2018年9月
+    \begin{itemize}
+      \item 玻璃缺陷检测项目性能优化。
         \begin{itemize}
-            \item 移植PC端程序到ARM开发板上的Linux/Android系统
-            \item 用simpleperf等工具做性能检测分析
-            \item 用ARM NEON指令集加速Android上rgba和yuv(nv21)的转换
-            \item 配合算法工程师做二值化网络和移动端CNN加速调研
+          \item 针对已有的手机玻璃缺陷检测产品的GPU代码进行优化，使每片10s以上的处理时间降低到1.2s。
+          \item 实现车载玻璃缺陷检测产品的GPU加速模块，达到每片5-6s的处理速度。
+          \item 针对我们的使用场景，用CUDA实现形态学erode/dilate、connected component labeling等图像处理基础算法。其中形态学部分的实现相比Nvidia NPP有3-8倍加速比的性能提升。
         \end{itemize}
-    \item 乐其公司新游地工作室游戏开发工程师，2014年7月-2017年5月
+      \item FPGA智能摄像头项目定点化神经网络调研。
+    \end{itemize}
+  \item 乐其公司新游地工作室游戏开发工程师，2014年7月-2017年5月
+    \begin{itemize}
+      \item 作为公司第一个大型2D手游项目的初始开发成员至今（目前游戏已上线：
+        \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
+        \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
+      \item 项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除此以外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}开发。
+      \item 我的主要贡献有：
         \begin{itemize}
-            \item 作为公司第一个大型2D手游项目的初始开发成员至今（目前游戏已上线：
-                \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
-                \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
-            \item 项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除此以外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}开发。
-            \item 迄今为止，我的主要贡献有：
-                \begin{itemize}
-                    \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}）。
-                    \item 定制UI控件。
+          \item trace错误和崩溃信息，研究如何fix或workaround上游bug。我的一些patch已被quick-cocos2d-x接受（如\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}）。
+          \item 定制UI控件。
                     % \item 定制UI控件，其中部分已在Github上开源：
                     %     \begin{itemize}
                     %         \item \url{https://github.com/yszheda/cocos2d-x-GridView}
                     %         \item \url{https://github.com/yszheda/cocos2d-x-irregular-button}
                     %         \item \url{https://github.com/yszheda/quickx-extensions}
                     %     \end{itemize}
-                    \item 开发Bash、Python脚本，制作和管理Docker镜像，用于自动化某些开发流程、线上错误信息整理和分发、代码检查、批处理策划表、服务器单接口压测等等。
-                    \item 游戏功能模块开发，包括但不限于客户端与服务器端的战斗。
-                    \item 改善客户端做UI界面流程，减少资源占用，优化游戏性能。
-                    \item 负责客户端code review和新人指导。
-                \end{itemize}
+          \item 开发Bash、Python脚本，制作和管理Docker镜像，用于自动化某些开发流程、线上错误信息整理和分发、代码检查、批处理策划表、服务器单接口压测等等。
+          \item 游戏功能模块开发，包括但不限于客户端与服务器端的战斗模块。
+          \item 改善客户端做UI界面流程，减少资源占用，优化游戏性能。
+          \item 负责客户端code review和新人指导。
         \end{itemize}
+    \end{itemize}
 \end{itemize}
+
+\section*{兴趣爱好}
+\begin{itemize}
+  \item 小提琴、古典音乐、阅读、羽毛球。
+\end{itemize}
+
+
+\section*{社团/兴趣小组}
+\begin{itemize}
+  \item 台湾清华大学弦乐社
+  \item 杭州南园爱乐
+  \item 广东金山中学爱乐社
+\end{itemize}
+
+
+\section*{获奖情况}
+\begin{itemize}
+  \item 乐其公司优秀员工, 2014--2015
+  \item 鸿海陆生奖学金, 2012--2013
+  \item 浙江大学优秀本科毕业论文, 2012
+  \item 学业优秀二等奖学金及优秀学生二等奖学金, 2010--2011
+  \item 浙江大学-Intel嵌入式知识竞赛二等奖, 2010
+  \item 学业优秀三等奖学金及优秀学生三等奖学金, 2009--2010
+  \item 浙江省大学生高等数学（微积分）竞赛二等奖, 2009
+  \item 浙江大学ACM竞赛三等奖, 2009
+  \item 学业优秀二等奖学金及优秀学生二等奖学金, 2008--2009
+\end{itemize}
+
 
 \section*{项目经历}
 \begin{itemize}
-    \item GPU-RSCode（2012,12--2014,6）：Reed-Solomon code的GPGPU加速。
-        \begin{itemize}
-            \item 采用\textbf{CUDA C/C++}。项目源代码开源并托管在Github上：\\
-                \url{https://github.com/yszheda/GPU-RSCode}
-            \item 与CPU上性能最好的Reed-Solomon code开源库Jerasure相比，有14.71倍的加速比。
-        \end{itemize}
-    \item GPU-knn（2012,9--2013,1）：用GPU加速k最近邻居算法。
-        \begin{itemize}
-            \item 分为四个子项目，采用\textbf{CUDA、OpenCL、pthread、MPI}开发，支持在多台机器多张GPU卡上运行。
-                % 项目源代码开源并托管在Github上：\\
-                \\ \url{https://github.com/yszheda/GPU-knn}
-        \end{itemize}
-    \item sim-outorder-extend（2013,3--2013,5）：SimpleScalar体系结构模拟器sim-outorder拓展。
-        \begin{itemize}
-            \item 采用\textbf{C}开发，实现Alpha 21264 dynamic branch predictor及四种cache replacement policy支持。
-                % 项目源代码开源并托管在Github上：\\
-                \\ \url{https://github.com/yszheda/sim-outorder-extend}
-        \end{itemize}
-    \item assertion-verification（2011,9--2012,3）：基于程序验证平台Why3实现一种数据库约束的编译时间自动化验证。
-        \begin{itemize}
-            \item 采用\textbf{Ocamllex}和\textbf{Ocamlyacc}开发。
-                % 项目源代码开源并托管在Github上：\\
-                \\ \url{https://github.com/yszheda/assertion-verification}
-        \end{itemize}
+  \item GPU-RSCode（2012,12--2014,6）：Reed-Solomon code的GPGPU加速。
+    \begin{itemize}
+      \item 采用\textbf{CUDA C/C++}。项目源代码开源并托管在Github上：\\
+        \url{https://github.com/yszheda/GPU-RSCode}
+      \item 与CPU上性能最好的Reed-Solomon code开源库Jerasure相比，有14.71倍的加速比。
+    \end{itemize}
+%  \item GPU-knn（2012,9--2013,1）：用GPU加速k最近邻居算法。
+%    \begin{itemize}
+%      \item 分为四个子项目，采用\textbf{CUDA、OpenCL、pthread、MPI}开发，支持在多台机器多张GPU卡上运行。
+%                % 项目源代码开源并托管在Github上：\\
+%        \\ \url{https://github.com/yszheda/GPU-knn}
+%    \end{itemize}
+%  \item sim-outorder-extend（2013,3--2013,5）：SimpleScalar体系结构模拟器sim-outorder拓展。
+%    \begin{itemize}
+%      \item 采用\textbf{C}开发，实现Alpha 21264 dynamic branch predictor及四种cache replacement policy支持。
+%                % 项目源代码开源并托管在Github上：\\
+%        \\ \url{https://github.com/yszheda/sim-outorder-extend}
+%    \end{itemize}
+%  \item assertion-verification（2011,9--2012,3）：基于程序验证平台Why3实现一种数据库约束的编译时间自动化验证。
+%    \begin{itemize}
+%      \item 采用\textbf{Ocamllex}和\textbf{Ocamlyacc}开发。
+%                % 项目源代码开源并托管在Github上：\\
+%        \\ \url{https://github.com/yszheda/assertion-verification}
+%    \end{itemize}
 %  \item E-go（2011,3--2011,6）：``易购''电子购物网站。
 %	\begin{itemize}
 %	  \item 采用JSP/Servlet所写，本人负责商品查询、排序及用户信息管理模块。项目源代码开源并托管在Google Code上：\\
@@ -170,10 +206,12 @@
 
 曾经参与过以下开源项目：
 \begin{itemize}
-    \item 跨平台游戏开发框架quick-cocos2d-x。
-    \item octopress插件octopress-syncPost （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）。
-    \item nginx工具nginx-devel-utils（给lua内存泄漏工具提交了一个简单的patch，已被接受）。
-    \item Linux文件系统扩展属性Python库xattr（提交了一个简单的patch，已被接受）。
+  \item 跨平台游戏开发框架quick-cocos2d-x。
+  \item octopress插件octopress-syncPost （\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}，前者被接受）。
+  \item nginx工具nginx-devel-utils（给lua内存泄漏工具提交了一个简单的patch，已被接受）。
+  \item Linux文件系统扩展属性Python库xattr（提交了一个简单的patch，已被接受）。
+  \item 深度学习框架mini-caffe（针对CUDA显存问题提交了一个patch：\href{https://github.com/luoyetx/mini-caffe/pull/75}{\tt PR\#75}，已被接受）。
+  \item 图形学计算几何及线性代数库MathGeoLib（针对SSE代码的一处bug提交了一个patch：\href{https://github.com/juj/MathGeoLib/pull/50}{\tt PR\#50}，已被接受）。
 \end{itemize}
 
 % 其他开源项目请访问：
@@ -191,31 +229,18 @@
 \begin{itemize}
 % \item Language: English, Native Mandarin
     % \item 编程语言：\textbf{Lua}, \textbf{C}, \textbf{C++}, \textbf{Bash}, \textbf{Octave/Matlab}, Verilog HDL, Shell script（主要为bash）
-    \item 编程语言：\textbf{Lua}, \textbf{C}, \textbf{C++}, \textbf{Bash}，曾经使用过\textbf{Python}, \textbf{Ruby}, \textbf{Java}, \textbf{OCaml}, \textbf{Octave/Matlab}做开发。
+  \item 编程语言：\textbf{Lua}, \textbf{C}, \textbf{C++}, \textbf{Bash}，曾经使用过\textbf{Python}, \textbf{Ruby}, \textbf{Java}, \textbf{OCaml}, \textbf{Octave/Matlab}做开发。
 % Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
-    \item 编程技术：并行计算（\textbf{CUDA}, \textbf{MPI}, \textbf{ARM NEON}）, 游戏开发（\textbf{cocos2d-x}）等。
+  \item 编程技术：并行计算（\textbf{CUDA}, \textbf{MPI}, \textbf{ARM NEON}）, 游戏开发（\textbf{cocos2d-x}）等。
     % \item IDE等编程工具：XCode, Eclipse, Visual Studio, Xilinx ISE（个人项目一般不用IDE，而是用Vim做编辑器，写Makefile或用automake工具做构建，用gdb、valgrind调试。熟悉CUDA的cuda-memcheck、cuda-gdb、nvprof等工具。）
-    \item IDE等编程工具：\textbf{XCode}, \textbf{Eclipse}等（个人项目一般不用IDE，平时用\textbf{Vim}做编辑器，写\textbf{Makefile}或用\textbf{automake}工具做构建，用\textbf{gdb}、\textbf{valgrind}调试。熟悉CUDA的\textbf{cuda-memcheck}、\textbf{cuda-gdb}、\textbf{nvprof}等工具。使用\textbf{adb}、\textbf{ndk-stack}排查安卓应用的问题）。
-    \item 版本控制工具：主要使用\textbf{git}，曾使用过\textbf{svn}（目前用\textbf{git-svn}代替）和老掉渣的\textbf{cvs}。
-    \item 操作系统：\textbf{GNU/Linux}（目前使用Arch Linux，使用过Ubuntu、Debian、CentOS）。
+  \item IDE等编程工具：\textbf{XCode}, \textbf{Eclipse}等（个人项目一般不用IDE，平时用\textbf{Vim}做编辑器，写\textbf{Makefile}或用\textbf{automake}工具做构建，用\textbf{gdb}、\textbf{valgrind}调试。熟悉CUDA的\textbf{cuda-memcheck}、\textbf{cuda-gdb}、\textbf{nvprof}等工具。使用\textbf{adb}、\textbf{ndk-stack}排查安卓应用的问题）。
+  \item 版本控制工具：主要使用\textbf{git}，曾使用过\textbf{svn}（目前用\textbf{git-svn}代替）和老掉渣的\textbf{cvs}。
+  \item 操作系统：\textbf{GNU/Linux}（目前使用Arch Linux，使用过Ubuntu、Debian、CentOS）。
 %    \item 调试工具：gdb
 %    \item 编辑器：Vim
 % \item Applications: vim, Eclipse, Visual Studio, Xilinx ISE, svn, etc.
 %    \item 文档工具：\LaTeX
 % \item Documentation: \LaTeX, MS Office
-\end{itemize}
-
-\section*{获奖情况}
-\begin{itemize}
-    \item 乐其公司优秀员工, 2014--2015
-    \item 鸿海陆生奖学金, 2012--2013
-    \item 浙江大学优秀本科毕业论文, 2012
-    \item 学业优秀二等奖学金及优秀学生二等奖学金, 2010--2011
-    \item 浙江大学-Intel嵌入式知识竞赛二等奖, 2010
-    \item 学业优秀三等奖学金及优秀学生三等奖学金, 2009--2010
-    \item 浙江省大学生高等数学（微积分）竞赛二等奖, 2009
-    \item 浙江大学ACM竞赛三等奖, 2009
-    \item 学业优秀二等奖学金及优秀学生二等奖学金, 2008--2009
 \end{itemize}
 
 
@@ -255,8 +280,8 @@
 \bigskip
 % Footer
 \begin{center}
-    \begin{footnotesize}
+  \begin{footnotesize}
 %Last updated: \today \\
-    \end{footnotesize}
+  \end{footnotesize}
 \end{center}
 \end{document}
