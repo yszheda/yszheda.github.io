@@ -49,7 +49,7 @@
 \begin{minipage}[t]{0.8\textwidth}
 % Department of Computer Science \\
 % National Tsing Hua University \\
-    Mobile game developer in Xinyoudi Studio, Leqee Company \\
+    Senior Software Engineer, Dorabot Company \\
     Mobile: (86)13539623264   \\
     Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com}\\
     Personal Profile: \url{http://yszheda.github.io} \\
@@ -144,23 +144,23 @@
 
 \section*{Career Experiences}
 \begin{itemize}
-    \item Software Engineer, Dorabot, 2018/10--current.
+    \item Senior Software Engineer, Dorabot Company, 2018/10--current.
         \begin{itemize}
-          \item Performance optimization on collision detection for arm motion planning. We have achieved 6x speedup.
+            \item I'm mainly working on collision detection and performance optimization related to robot motion planning. My contributions include, but are not limited to:
                 \begin{itemize}
-                    \item Implement broad phase collision detection to reduce pair-to-pair collision detection time
-                    \item Use SSE and AVX to accelerate OBB overlap checking. We have archived 1.3-1.6x speedup.
+                    \item Performance optimization on collision detection for arm motion planning. I have achieved 6x speedup compared to the original implementation.
+                    \item Maintain our fork of flexible collision library \href{https://github.com/flexible-collision-library/fcl}{FCL}. Use \textbf{SSE} and \textbf{AVX} to accelerate BVH overlap checking. My patch can improve the performance of OBB overlap checking by 30-60\% compared to the latest version of FCL.
+                    \item Implement collision detection feature for grasp planning to support checking whether the moving gripper is collided with the obstacles in the environment. Use \textbf{OpenMP} to accelerate point cloud and octree processing.
+                    \item Implement Seidel linear programming solver to improve the performance of TOPP-RA parameterizer. We can achieve 16x speedup compared to previous implementation using the qpOASES library.
                 \end{itemize}
-            \item Implement collision detection feature for grasp planning
-            \item Implement Seidel solver to improve the performance of TOPP-RA parameterizer.
         \end{itemize}
     \item Heterogeneous Parallel Computing Engineer, Tunicorn Technology, 2017/7--2018/9.
         \begin{itemize}
             \item My contributions in Glass Flaw Detecting Project:
                 \begin{itemize}
                     \item Parallelize previous phone-glass flaw detecting implementation from 10s+ per glass to 1.2s.
-                    \item Implement GPU version of car-glass flaw detecting. We have archived 5-6s for detecting flaws for each car glass.
-                    \item Accelerating Connected Component Labeling using CUDA.
+                    \item Implement GPU version of car-glass flaw detecting. We have achieved 5-6s for detecting flaws for each car glass.
+                    \item Accelerating Connected Component Labeling using \textbf{CUDA}.
                     \item Optimize Morphology Erode/Dilate. In our cases, my implementation have gained 3-8 speedup compared to Nvidia NPP library.
                 \end{itemize}
             \item My contributions in FPGA Smart Camera Project:
@@ -171,7 +171,6 @@
                 \begin{itemize}
                     \item Optimize YUV/RGA conversion, rotation etc. in RenderScript.
                 \end{itemize}
-            \item Now I am working on improving the performance of our Dynamic Face Recognition and Tracking System.
         \end{itemize}
     \item Mobile game developer in Xinyoudi Studio, Leqee Company, 2014/7--2017/5.
         \begin{itemize}
@@ -179,7 +178,7 @@
                 \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play} and
                 \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}).
             \item As a leading client developer, I get my hands dirty on development using \href{http://cocos2d-x.org/}{\tt cocos2d-x} and \href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}. Besides, I also take part in server development using \href{https://github.com/openresty/openresty}{\tt OpenResty}.
-            \item My main contributions include:
+            \item My main contributions include, but are not limited to:
                 \begin{itemize}
                     \item Trace errors and crash, work on fixing or workarounding upstream bug, some of the patches are accepted by quick-cocos2d-x (\href{https://github.com/dualface/v3quick/pull/407}{\tt PR\#407}, \href{https://github.com/dualface/v3quick/pull/438}{\tt PR\#438}, \href{https://github.com/dualface/v3quick/pull/440}{\tt PR\#440}).
                     % \item Customize UI widgets, some of them are available on Github: \href{https://github.com/yszheda/cocos2d-x-GridView}{GridView}, \href{https://github.com/yszheda/cocos2d-x-irregular-button}{irregular button}, and \href{https://github.com/yszheda/quickx-extensions}{\tt quickx-extensions}.
@@ -188,7 +187,7 @@
                     \item Develop multiple modules in our game.
                     % \item Improve client UI workflow for better performance.
                     \item Use \textbf{Docker} for quick deployment and scaling up.
-                    \item Code review of our client source code.
+                    % \item Code review of our client source code.
                 \end{itemize}
         \end{itemize}
 \end{itemize}
