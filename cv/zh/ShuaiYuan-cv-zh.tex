@@ -92,9 +92,18 @@
 
 \section*{工作经历}
 \begin{itemize}
-  \item 蓝胖子机器人公司软件工程师，2018年10月至今
+  \item 蓝胖子机器人公司高级软件工程师，2018年10月至今
     \begin{itemize}
-      \item collision detection及motion planning相关优化。
+      \item 机械臂运动规划中碰撞检测的相关优化。
+        \begin{itemize}
+          \item 优化碰撞检测算法，与之前的算法相比有6倍左右的性能加速比。
+          \item 维护公司fork的碰撞检测算法库FCL（flexible collision library），用SIMD指令集SSE和AVX加速BVH overlap检查。与最新版的FCL相比有30-60\%的性能提升。
+        \end{itemize}
+      \item 实现机械臂抓手的抓取规划中的碰撞检测，用OpenMP加速点云、八叉树的处理。
+      \item 开发yaskawa motoman、fanuc、elfin等机械臂的驱动。
+      \item 重构公司的RGBD相机驱动代码，并开发了Kinect2的驱动
+      \item 用ros2（Robot Operating System）开发机械臂物流induction项目。
+      \item 协助视觉组同事实现算法的CUDA版本及处理使用GPU的问题。
     \end{itemize}
   \item 图麟科技公司异构并行计算工程师，2017年8月-2018年9月
     \begin{itemize}
@@ -104,7 +113,10 @@
           \item 实现车载玻璃缺陷检测产品的GPU加速模块，达到每片5-6s的处理速度。
           \item 针对我们的使用场景，用CUDA实现形态学erode/dilate、connected component labeling等图像处理基础算法。其中形态学部分的实现相比Nvidia NPP有3-8倍加速比的性能提升。
         \end{itemize}
+      \item 移植OCR项目到Nvidia Jetson TK1和TX1嵌入式平台，并对接海康工业相机。针对TK1和TX1的特性优化神经网络前向框架mini-caffe。
       \item FPGA智能摄像头项目定点化神经网络调研。
+      \item 在安卓端人脸识别项目中用RenderScript优化图片YUV/RGB转化及旋转等基本处理。
+      \item 承担部分人脸识别服务器开发工作。
     \end{itemize}
   \item 乐其公司新游地工作室游戏开发工程师，2014年7月-2017年5月
     \begin{itemize}
@@ -130,18 +142,18 @@
     \end{itemize}
 \end{itemize}
 
-\section*{兴趣爱好}
-\begin{itemize}
-  \item 小提琴、古典音乐、阅读、羽毛球。
-\end{itemize}
+% \section*{兴趣爱好}
+% \begin{itemize}
+%   \item 小提琴、古典音乐、阅读、羽毛球。
+% \end{itemize}
 
 
-\section*{社团/兴趣小组}
-\begin{itemize}
-  \item 台湾清华大学弦乐社
-  \item 杭州南园爱乐
-  \item 广东金山中学爱乐社
-\end{itemize}
+% \section*{社团/兴趣小组}
+% \begin{itemize}
+%   \item 台湾清华大学弦乐社
+%   \item 杭州南园爱乐
+%   \item 广东金山中学爱乐社
+% \end{itemize}
 
 
 \section*{获奖情况}
@@ -213,6 +225,8 @@
   \item Linux文件系统扩展属性Python库xattr（提交了一个简单的patch，已被接受）。
   \item 深度学习框架mini-caffe（针对CUDA显存问题提交了一个patch：\href{https://github.com/luoyetx/mini-caffe/pull/75}{\tt PR\#75}，已被接受）。
   \item 图形学计算几何及线性代数库MathGeoLib（针对SSE代码的一处bug提交了一个patch：\href{https://github.com/juj/MathGeoLib/pull/50}{\tt PR\#50}，已被接受）。
+  \item 嵌入式DDS网络客户端 \href{https://github.com/eProsima/Micro-XRCE-DDS-Client}{\tt Micro XRCE-DDS Client}（修改了udp多播服务发现的一处bug：\href{https://github.com/eProsima/Micro-XRCE-DDS-Client/pull/119}{\tt PR \#119}，已被接受）。
+  \item \href{https://github.com/ros-industrial/motoman}{\tt motoman机械臂ROS-Industrial软件包}（修复了socket线程安全问题：\href{https://github.com/ros-industrial/motoman/pull/319}{\tt PR\#319}）。
 \end{itemize}
 
 % 其他开源项目请访问：

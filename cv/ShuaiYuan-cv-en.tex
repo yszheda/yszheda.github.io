@@ -146,12 +146,16 @@
 \begin{itemize}
     \item Senior Software Engineer, Dorabot Company, 2018/10--current.
         \begin{itemize}
-            \item I'm mainly working on collision detection and performance optimization related to robot motion planning. My contributions include, but are not limited to:
+            \item I'm mainly working on collision detection, robot motion control, and performance optimization related to robot motion planning. My contributions include, but are not limited to:
                 \begin{itemize}
                     \item Performance optimization on collision detection for arm motion planning. I have achieved 6x speedup compared to the original implementation.
                     \item Maintain our fork of flexible collision library \href{https://github.com/flexible-collision-library/fcl}{FCL}. Use \textbf{SSE} and \textbf{AVX} to accelerate BVH overlap checking. My patch can improve the performance of OBB overlap checking by 30-60\% compared to the latest version of FCL.
                     \item Implement collision detection feature for grasp planning to support checking whether the moving gripper is collided with the obstacles in the environment. Use \textbf{OpenMP} to accelerate point cloud and octree processing.
-                    \item Implement Seidel linear programming solver to improve the performance of TOPP-RA parameterizer. We can achieve 16x speedup compared to previous implementation using the qpOASES library.
+                    % \item Implement Seidel linear programming solver to improve the performance of TOPP-RA parameterizer. We can achieve 16x speedup compared to previous implementation using the qpOASES library.
+                    \item Implement driver for industrial robots like yaskawa motoman, fanuc, elfin, etc..
+                    \item Develop logistics induction application using \textbf{ros2 (Robot Operating System)}.
+                    \item Refactor RGBD camera driver and implement driver for Kinect2.
+                    \item Help vision colleagues with CUDA related issues and implement some of their customized algorithm in CUDA to achieve better performance.
                 \end{itemize}
         \end{itemize}
     \item Heterogeneous Parallel Computing Engineer, Tunicorn Technology, 2017/7--2018/9.
@@ -165,11 +169,17 @@
                 \end{itemize}
             \item My contributions in FPGA Smart Camera Project:
                 \begin{itemize}
-                    \item Implement fixed-point quantization of Convolutional Neural Networks in C/C++ for verification. 
+                    \item Implement fixed-point quantization of Convolutional Neural Networks in C/C++ for verification.
+                \end{itemize}
+            \item My contributions in OCR (Optical Character Recognition) Project:
+                \begin{itemize}
+                  \item Porting the OCR application to Nvidia Jetson \textbf{TK1} and \textbf{TX1}.
+                  \item Optimize mini-caffe deep learning framework in \textbf{TK1} and \textbf{TX1}.
+                  % \item Integrate with hikvision camera.
                 \end{itemize}
             \item My contributions in Mobile Face Detecting Project:
                 \begin{itemize}
-                    \item Optimize YUV/RGA conversion, rotation etc. in RenderScript.
+                  \item Optimize YUV/RGB conversion, rotation etc. in \textbf{RenderScript}.
                 \end{itemize}
         \end{itemize}
     \item Mobile game developer in Xinyoudi Studio, Leqee Company, 2014/7--2017/5.
@@ -237,6 +247,9 @@
 
 I have made some contributions to the following open-source projects:
 \begin{itemize}
+    \item Embedded DDS network client \href{https://github.com/eProsima/Micro-XRCE-DDS-Client}{\tt Micro XRCE-DDS Client}: fix udp multicast service discovery (\href{https://github.com/eProsima/Micro-XRCE-DDS-Client/pull/119}{\tt PR \#119}, accepted).
+    \item \href{https://github.com/ros-industrial/motoman}{\tt ROS-Industrial motoman packages}: fix socket thread safety bug \href{https://github.com/ros-industrial/motoman/pull/319}{\tt PR\#319}
+    \item Linear algebra and geometry manipulation library MathGeoLib: fix SSE bug(\href{https://github.com/juj/MathGeoLib/pull/50}{\tt PR\#50}, accepted).
     \item Multi-platform game framework: \href{https://github.com/cocos2d/cocos2d-x}{\tt cocos2d-x} and \href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}.
     \item Octopress plugin: \href{https://github.com/huangbowen521/octopress-syncPost}{octopress-syncPost} (\href{https://github.com/huangbowen521/octopress-syncPost/pull/8}{\tt PR\#8} \& \href{https://github.com/huangbowen521/octopress-syncPost/pull/9}{\tt PR\#9}, one accepted).
     \item Utilities for nginx module development： \href{https://github.com/openresty/openresty-devel-utils}{\tt openresty-devel-utils} (a simple patch \href{https://github.com/openresty/openresty-devel-utils/pull/9}{\tt PR\#9} for lua-releng, accepted).
@@ -258,7 +271,7 @@ I have made some contributions to the following open-source projects:
 %    \item Programming Language: C, C++, Lua, Matlab/Octave, Verilog HDL, script(mainly bash), etc.
 %    \item Programming Language: C, C++, Lua, Matlab/Octave, Verilog HDL, Shell script(mainly bash), Ocaml.
 % Assembly, OCaml(partial), ocamlyacc, ocamllex, etc.
-    \item Framework/API: \textbf{CUDA}, \textbf{MPI}, \textbf{cocos2d-x}, \textbf{quick-cocos2d-x}, \textbf{OpenResty}, etc.
+    \item Framework/API: \textbf{CUDA}, \textbf{MPI}, \textbf{ros2}, \textbf{cocos2d-x}, \textbf{quick-cocos2d-x}, \textbf{OpenResty}, etc.
     % \item IDE/Programming Tools: XCode, Eclipse, Visual Studio, Xilinx ISE, etc. (I use Vim as editor, use automake to build my own project, have experience with gdb, valgrind, gprof, cuda-gdb, cuda-memcheck, nvprof, etc.)
     \item IDE/Programming Tools: \textbf{XCode}, \textbf{Eclipse}, etc. (I use \textbf{Vim} as an editor, use \textbf{automake} to build my own project, have experience with \textbf{gdb}, \textbf{valgrind}, \textbf{gprof}, \textbf{cuda-gdb}, \textbf{cuda-memcheck}, \textbf{nvprof}, \textbf{adb}, \textbf{ndk-stack}, etc.)
     \item Operating System: \textbf{GNU/Linux} (Ubuntu, Debian, now I'm using ArchLinux).
@@ -300,7 +313,7 @@ I have made some contributions to the following open-source projects:
 
 \section*{Honor and Awards}
 \begin{itemize}
-    \item Honor: 
+    \item Honor:
         \begin{itemize}
             \item Bravo Award in Tunicorn Technology Company, 2017--2018.
             \item outstanding employee in Leqee Company, 2014--2015.
