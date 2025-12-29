@@ -49,7 +49,8 @@
 \begin{minipage}[t]{0.8\textwidth}
 % Department of Computer Science \\
 % National Tsing Hua University \\
-    Senior Software Engineer, Dorabot Company \\
+% Senior Software Engineer, Dorabot Company \\
+    Staff Engineer, ARM China Company \\
     Mobile: (86)13539623264   \\
     Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com}\\
     Personal Profile: \url{http://yszheda.github.io} \\
@@ -144,7 +145,24 @@
 
 \section*{Career Experiences}
 \begin{itemize}
-    \item Senior Software Engineer, Dorabot Company, 2018/10--current.
+    \item Staff Engineer, NPU Department, ARM China Company, 2020/8--current.
+        \begin{itemize}
+            \item Implement operators like Pooling, Matmul, RMSNorm, Reduce, RNN, etc.
+            \item Design and implement lowering passes of NN (Neural Network) compiler.
+            \item Performance optimization on multiple neural networks, including but not limited to:
+                \begin{itemize}
+                    % 2025
+                    \item Optimize Reduce L2 in \href{https://github.com/sczhou/CodeFormer}{CodeFormer} and achieve 4x speedup for all the Reduce L2 layer, cutting the overall network time by 9%.
+                    % 2024
+                    \item Optimize RMSNorm in \href{https://github.com/meta-llama/llama}{llama2} and achieve 16x speedup for all the layers of the same kind.
+                    \item Optimize Reduce SUM/MEAN in \href{https://github.com/fundamentalvision/BEVFormer}{BEVFormer} and achieve 6x speedup for all the layers of the same kind.
+                    % 2023
+                    \item Optimize LayerNorm in \href{https://github.com/NVlabs/SegFormer}{SegFormer} and achieve 1.4x speedup for all the layers of the same kind.
+                    \item Optimize LayerNorm in \href{https://github.com/sczhou/CodeFormer}{CodeFormer} and achieve 4.21x speedup for all the layers of the same kind.
+                    \item Optimize InstanceNorm in \href{https://github.com/tianzhi0549/FCOS}{FCOS} and achieve 6.4x speedup for all the layers of the same kind.
+                \end{itemize}
+        \end{itemize}
+    \item Senior Software Engineer, Dorabot Company, 2018/10--2020/8.
         \begin{itemize}
             \item I'm mainly working on collision detection, robot motion control, and performance optimization related to robot motion planning. My contributions include, but are not limited to:
                 \begin{itemize}
