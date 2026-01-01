@@ -18,9 +18,9 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 
-\setCJKmainfont[Mapping=tex-text]{WenQuanYi Micro Hei}
-\setCJKsansfont[Mapping=tex-text]{WenQuanYi Micro Hei}
-\setCJKmonofont[Mapping=tex-text]{WenQuanYi Micro Hei Mono}
+% \setCJKmainfont[Mapping=tex-text]{WenQuanYi Micro Hei}
+% \setCJKsansfont[Mapping=tex-text]{WenQuanYi Micro Hei}
+% \setCJKmonofont[Mapping=tex-text]{WenQuanYi Micro Hei Mono}
 % Uncomment the following lines to use the Palatino font.  Remove the
 % [osf] bit if you don't like the old style figures.
 %
@@ -55,21 +55,37 @@
 % }
 \begin{document}
 \centerline{\huge\bf \name} \vspace{0.25in}
-\begin{minipage}[t]{0.8\textwidth}
-%    乐其新游地工作室游戏开发工程师 \\
-% 台湾国立清华大学资讯工程系 \\
-% 手机：0988473989/(886)988473989   \\
-% 手机： (0886)988473989/(86)13539623264   \\
-  手机： (86)13539623264   \\
-  Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com} \\
-  个人主页：\url{http://yszheda.github.io} \\
-  % 技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}
-  博客：\url{https://yszheda.github.io/blog/blog/categories/tech/}
-\end{minipage}
+
+% \begin{minipage}[t]{0.8\textwidth}
+% %    乐其新游地工作室游戏开发工程师 \\
+% % 台湾国立清华大学资讯工程系 \\
+% % 手机：0988473989/(886)988473989   \\
+% % 手机： (0886)988473989/(86)13539623264   \\
+%   手机： (86)13539623264   \\
+%   Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com} \\
+%   个人主页：\url{http://yszheda.github.io} \\
+%   % 技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}
+%   博客：\url{https://yszheda.github.io/blog/blog/categories/tech/}
+% \end{minipage}
+
+\section*{基本信息}
+\begin{itemize}
+    \item 性别：男
+    \item 民族：汉族
+    \item 出生年月：1989.10
+    \item 籍贯：广东揭阳
+    \item 户口所在地：广东深圳
+    \item 手机：13539623264
+    \item 最高学历：硕士
+    \item 外语水平：英语大学六级
+    \item Email: \href{mailto:yszheda@gmail.com}{\tt yszheda@gmail.com}
+    \item 个人主页：\url{http://yszheda.github.io}
+    \item 技术博客：\url{http://galoisplusplus.coding.me/blog/categories/tech/}  
+\end{itemize}
 
 \section*{教育背景}
 \begin{itemize}
-  \item 台湾国立清华大学资讯工程专业（Computer Science）硕士，2012--2014 (GPA: 4.23/4.3).
+  \item 中国台湾清华大学资讯工程专业（Computer Science）硕士，2012--2014 (GPA: 4.23/4.3).
 %    \begin{itemize}
 %    \item \textit{Overall GPA}: Your GPA
 %    \item \textit{Ranking}: Your Ranking
@@ -85,14 +101,19 @@
 
 \section*{研究经历}
 \begin{itemize}
-  \item 国立清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课助教，2012--2014
+  \item 中国台湾清华大学LSA (Large-scale System Architecture)实验室成员，导师为周志远教授，研究方向为Erasure Codes、Cloud Storage System和GPGPU，期间曾任导师并行计算课程的CUDA实验课助教，2012--2014
   \item 法国巴黎十一大学LRI (Laboratoire de Recherche en Informatique)实验室研究实习生，导师为V\'eronique Benzaken和\'Evelyne Contejean教授，研究课题为“数据库完整性约束的自动化验证”，2011,10--2012,4
   \item 浙江大学－微软联合实验室成员，导师为宋明黎教授，研究课题为“图像场景音频识别”，2010--2012
 \end{itemize}
 
 \section*{工作经历}
 \begin{itemize}
-  \item 蓝胖子机器人公司高级软件工程师，2018年10月至今
+    \item Arm China公司高级软件工程师 (Staff Software Engineer)，2020年8月至今
+    \begin{itemize}
+	\item 主要负责AI芯片算子（如Pooling、Matmul、Gru、Rnn等）开发。
+	\item 深度学习网络计算图处理及优化。
+    \end{itemize}
+  \item 蓝胖子机器人公司高级软件工程师，2018年10月-2020年8月
     \begin{itemize}
       \item 机械臂运动规划中碰撞检测的相关优化。
         \begin{itemize}
@@ -120,9 +141,9 @@
     \end{itemize}
   \item 乐其公司新游地工作室游戏开发工程师，2014年7月-2017年5月
     \begin{itemize}
-      \item 作为公司第一个大型2D手游项目的初始开发成员至今（目前游戏已上线：
-        \href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
-        \href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
+        % \item 作为公司第一个大型2D手游项目的初始开发成员至今（游戏上线在：
+        % \i\href{https://play.google.com/store/apps/details?id=com.game168.yysg}{\tt Google Play}及
+        % \i\href{https://itunes.apple.com/us/app/ye-ye-san-guo/id976517523?mt=8}{\tt App Store}）。
       \item 项目组客户端开发主程，主要采用\href{http://cocos2d-x.org/}{\tt cocos2d-x}和\href{https://github.com/dualface/v3quick}{\tt quick-cocos2d-x}。除此以外，也负责一些服务器端开发工作，采用\href{https://github.com/openresty/openresty}{\tt OpenResty}开发。
       \item 我的主要贡献有：
         \begin{itemize}
@@ -141,19 +162,6 @@
         \end{itemize}
     \end{itemize}
 \end{itemize}
-
-% \section*{兴趣爱好}
-% \begin{itemize}
-%   \item 小提琴、古典音乐、阅读、羽毛球。
-% \end{itemize}
-
-
-% \section*{社团/兴趣小组}
-% \begin{itemize}
-%   \item 台湾清华大学弦乐社
-%   \item 杭州南园爱乐
-%   \item 广东金山中学爱乐社
-% \end{itemize}
 
 
 \section*{获奖情况}
@@ -229,11 +237,11 @@
   \item \href{https://github.com/ros-industrial/motoman}{\tt motoman机械臂ROS-Industrial软件包}（修复了socket线程安全问题：\href{https://github.com/ros-industrial/motoman/pull/319}{\tt PR\#319}）。
 \end{itemize}
 
-% 其他开源项目请访问：
-% \begin{itemize}
-%     \item Github主页：\url{http://github.com/yszheda} 
+其他开源项目请访问：
+\begin{itemize}
+    \item Github主页：\url{http://github.com/yszheda} 
 %     \item Google code主页：\url{https://code.google.com/u/yszheda@gmail.com/}
-% \end{itemize}
+\end{itemize}
 
 % \section*{研究领域}
 % GPGPU, Cloud Storage System, Erasure Codes.
@@ -250,13 +258,25 @@
     % \item IDE等编程工具：XCode, Eclipse, Visual Studio, Xilinx ISE（个人项目一般不用IDE，而是用Vim做编辑器，写Makefile或用automake工具做构建，用gdb、valgrind调试。熟悉CUDA的cuda-memcheck、cuda-gdb、nvprof等工具。）
   \item IDE等编程工具：\textbf{XCode}, \textbf{Eclipse}等（个人项目一般不用IDE，平时用\textbf{Vim}做编辑器，写\textbf{Makefile}或用\textbf{automake}工具做构建，用\textbf{gdb}、\textbf{valgrind}调试。熟悉CUDA的\textbf{cuda-memcheck}、\textbf{cuda-gdb}、\textbf{nvprof}等工具。使用\textbf{adb}、\textbf{ndk-stack}排查安卓应用的问题）。
   \item 版本控制工具：主要使用\textbf{git}，曾使用过\textbf{svn}（目前用\textbf{git-svn}代替）和老掉渣的\textbf{cvs}。
-  \item 操作系统：\textbf{GNU/Linux}（目前使用Arch Linux，使用过Ubuntu、Debian、CentOS）。
+%  \item 操作系统：\textbf{GNU/Linux}（目前使用Arch Linux，使用过Ubuntu、Debian、CentOS）。
 %    \item 调试工具：gdb
 %    \item 编辑器：Vim
 % \item Applications: vim, Eclipse, Visual Studio, Xilinx ISE, svn, etc.
 %    \item 文档工具：\LaTeX
 % \item Documentation: \LaTeX, MS Office
 \end{itemize}
+
+\section*{兴趣爱好}
+\begin{itemize}
+  \item 小提琴、古典音乐、阅读、羽毛球。
+\end{itemize}
+
+% \section*{社团/兴趣小组}
+% \begin{itemize}
+%   \item 中国台湾清华大学弦乐社
+%   \item 杭州南园爱乐
+%   \item 广东金山中学爱乐社
+% \end{itemize}
 
 
 % \section*{Extracurricular Activities}
