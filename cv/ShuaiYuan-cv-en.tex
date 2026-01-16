@@ -152,14 +152,15 @@
             \item Performance optimization on multiple neural networks, including but not limited to:
                 \begin{itemize}
                     % 2025
-                    \item Optimize Reduce L2 in \href{https://github.com/sczhou/CodeFormer}{CodeFormer} and achieve 4x speedup for all the Reduce L2 layer, cutting the overall network time by 9%.
+                    \item Optimize Reduce L2 in \href{https://github.com/sczhou/CodeFormer}{CodeFormer} and achieve 4x speedup for all the Reduce L2 layer, cutting the overall network time by 9\%.
+                    \item Optimize dynamic shape RMSNorm in Qwen and boost the performance by 68\% for all the layers of the same kind in this network.
                     % 2024
                     \item Optimize RMSNorm in \href{https://github.com/meta-llama/llama}{llama2} and achieve 16x speedup for all the layers of the same kind.
                     \item Optimize Reduce SUM/MEAN in \href{https://github.com/fundamentalvision/BEVFormer}{BEVFormer} and achieve 6x speedup for all the layers of the same kind.
-                    % 2023
-                    \item Optimize LayerNorm in \href{https://github.com/NVlabs/SegFormer}{SegFormer} and achieve 1.4x speedup for all the layers of the same kind.
-                    \item Optimize LayerNorm in \href{https://github.com/sczhou/CodeFormer}{CodeFormer} and achieve 4.21x speedup for all the layers of the same kind.
-                    \item Optimize InstanceNorm in \href{https://github.com/tianzhi0549/FCOS}{FCOS} and achieve 6.4x speedup for all the layers of the same kind.
+                    % % 2023
+                    % \item Optimize LayerNorm in \href{https://github.com/NVlabs/SegFormer}{SegFormer} and achieve 1.4x speedup for all the layers of the same kind.
+                    % \item Optimize LayerNorm in \href{https://github.com/sczhou/CodeFormer}{CodeFormer} and achieve 4.21x speedup for all the layers of the same kind.
+                    % \item Optimize InstanceNorm in \href{https://github.com/tianzhi0549/FCOS}{FCOS} and achieve 6.4x speedup for all the layers of the same kind.
                 \end{itemize}
         \end{itemize}
     \item Senior Software Engineer, Dorabot Company, 2018/10--2020/8.
